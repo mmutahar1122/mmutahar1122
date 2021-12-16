@@ -1,1 +1,28 @@
-E:\Project Practice\practice\table 2.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<table/>
+<tr>
+<td>name</td>
+<td>Mutahar</td>
+</tr>
+<tr>
+<td>age</td>
+<td>18</td>
+</tr>
+<tr>
+<td>class</td>
+<td>second year</td>
+</tr>
+
+
+</body>
+</html>
