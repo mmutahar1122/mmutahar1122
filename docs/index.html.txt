@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project1</title>
+    <style>
+    body{
+        background: url(c.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    nav{
+        height: 50px;
+        background: orangered;
+        border: 3px solid black ;
+        border-radius: 2em;
+        
+    }
+    ul{
+        list-style: none;
+        display: flex; 
+        justify-content: flex-end;
+        margin-right: 15px;   
+    }
+    ul li{
+        margin-right: 15px;
+        color: white;
+    }
+    /* .nav contante:nth-child(1){
+        justify-content: flex-start;
+    } */
+    #mainform{
+        background: url(c.jpg);
+        background-size: cover;
+        /* background-attachment:fixed; */
+        margin-top: 20px;
+        height: 500px;
+        width: 400px;
+        border: 4px solid black;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        margin: auto;
+        margin-top: 40px;
+    }
+     #formbody{
+         display: flex;
+         flex-direction: column;
+         width: 150px;
+         justify-content: center;
+     }
+     #formbody #child{
+         margin-top: 10px;
+         padding: 15px;
+         font-size: 20px;
+         opacity: 50%;
+         font-style: oblique;
+         
+     }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav contante">
+            <li>logo</li>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>About</li>
+            <input type="text" placeholder="search herea">
+        </ul>
+    </nav>
+   
+    <div id="mainform">
+    <form  id="formbody" action="">
+        <input id="child" required type="f.name" placeholder="f.name">
+        <input id="child" required type="l.name" placeholder="l.name">
+        <input id="child" required type="email" placeholder="email">
+        <input id="child" required type="password" placeholder="password">
+        <button id="child">sign in</button></div>
+    </form>
+    
+</body>
+</html>
