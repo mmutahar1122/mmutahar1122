@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project1</title>   
+    
+    <style>
+    body{
+        background: url(c.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    header{
+        height: 80px;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        border-radius: 3em;
+        align-items: center;
+    }
+    nav{
+        height: 50px;
+        background: orangered;
+        border: 3px solid black ;
+        border-radius: 2em;
+        position: relative;
+        top: 3px;
+        
+        
+    }
+    @media (min-width:250px) and (max-width:600px){
+        nav ul li{
+            margin: 5px;
+        }
+        ul :nth-child(5){
+            width: 30px;
+        }
+    }
+
+    
+
+    ul{
+        list-style: none;
+        display: flex; 
+        justify-content: flex-end;
+        margin-right: 15px;
+         
+    }
+    ul li{
+        margin-right: 30px;
+        color: white;
+        cursor: pointer; 
+    }
+    .homechild{
+        background: orangered;
+        display: none;
+        position: absolute;
+    }
+    .nav :nth-child(1):hover .homechild {
+        display: list-item;
+    
+    } 
+    
+    .contactchild{
+        background: orangered;
+        display: none;
+        position: absolute;
+    }
+    .nav :nth-child(2):hover .contactchild{
+        display: list-item;
+    }
+    .serviceschild{
+        background: orangered;
+        display: none;
+        position: absolute;
+    }
+    .nav :nth-child(3):hover .serviceschild{
+        display: list-item;
+    }
+    .aboutchild{
+        background: orangered;
+        display: none;
+        position: absolute;
+        
+    }
+    .nav :nth-child(4):hover .aboutchild{
+        display: list-item;
+    }
+     #mainform{
+        background: url(c.jpg);
+        background-size: cover;
+        margin-top: 20px;
+        height: 500px;
+        width: 400px;
+        border: 4px solid black;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 40px;
+    }
+    @media (min-width:250px) and (max-width:340px){
+        #mainform{
+            width: 200px;
+
+        }
+        #child{
+            width: 100px;
+            display: flex;  
+            justify-content: center;
+            
+
+        }
+    }
+     #formbody{
+         display: flex;
+         flex-direction: column;
+         width: 200px;
+         justify-content: center;
+     }
+     #formbody #child{
+         margin-top: 10px;
+         padding: 15px;
+         font-size: 20px;
+         opacity: 50%;
+         font-style: oblique;
+         margin: auto;
+         
+     }
+     @media (min-width:300px) and (max-width:340px){
+         #lable{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+     }
+     #lable{
+         color: white;
+         font-size: 20px;
+
+     }
+
+     #mainbox{
+         display: flex;
+         justify-content: center;
+         height: 290px;
+         position: relative;
+         top: 40px;
+         /* background: plum; */
+         opacity: 50%;
+         display: flex;
+         position: relative;
+     }
+     @media (min-width:250px) and (max-width:700px){
+         #mainbox{
+             display: block;
+         }
+         .box{
+             display: flex;
+             margin: auto;
+             /* align-items: center;  */
+         }
+     }
+     .box{
+         background: black;
+         height: 230px;
+         width: 150px;
+         color: white;
+         padding: 3px;
+         margin: 20px;
+         margin-top: 30px;
+         border: 4px solid white;
+         }
+         
+         @media (min-width:300px) and (max-width:340px){
+             .box{
+                 display:block;
+                  
+             }
+
+
+         }
+
+         .box:nth-child(1):hover{
+         transform: scale(1.3);
+         transform: linear 0s;
+     }
+     .box:nth-child(2):hover{
+         transform: scale(1.3);
+         transform: linear 0s;
+     }
+     .box:nth-child(3):hover{
+         transform: scale(1.3);
+         transform: linear 0s;
+     }
+     .box:nth-child(4):hover{
+         transform: scale(1.3);
+         transform: linear 0s;
+     }
+     .box:nth-child(5):hover{
+         transform: scale(1.3);
+         transform: linear 0s;
+     }
+     marquee{
+         background: black;
+         /* color: white; */
+         height: 40px;
+         margin-top: 60px;
+         font-size: 20px;;
+         
+     }
+     #footer{
+         height: 150px;
+         width: 100%;
+         background:black;
+         color: white;
+         align-items: center;
+         display: flex;
+        justify-content: center;
+        position: absolute;
+        }
+         
+     
+     @media (min-width:250px) and (max-width:600px){
+         footer #footer{
+            align-items: flex-end;
+         }
+     }
+
+    </style>
+</head>
+<body>
+    <header>Hearder</header>
+    <nav>
+        <ul class="nav">
+            <!-- <li>logo</li> -->
+            <li>Home
+            <ul class="homechild">
+                   <li>abc</li>
+                    <li>def</li>
+                    <li>ghi</li>
+                    <li>jkl</li>
+                </ul>
+            </li>
+            <li>Contact
+                <ul class="contactchild">
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                </ul>
+            </li>
+            <li>Services
+                <ul class="serviceschild">
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                </ul>
+            </li>
+            <li>About
+                <ul class="aboutchild">
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                </ul>
+            </li>
+            <input type="text" placeholder="search herea">
+        </ul>
+    </nav>
+   
+    <div id="mainform">
+    <form  id="formbody" action="otherpage">
+        <label id="lable">firstname</label>
+        <input id="child" required type="f.name" placeholder="f.name">
+        <label id="lable">lastname</label>
+        <input id="child" required type="l.name" placeholder="l.name">
+        <label id="lable">email</label>
+        <input id="child" required type="email" placeholder="email">
+        <label id="lable">password</label>
+        <input id="child" required type="password" placeholder="password">
+        <button id="child">sign in</button></div>
+    </form>
+    
+
+
+
+    <div id="mainbox">
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, debitis. Id quos, hic molestiae quae tenetur ea. Asperiores debitis sed laboriosam eum animi consequatur, unde impedit numquam fugit! Explicabo, adipisci!</div>
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, debitis. Id quos, hic molestiae quae tenetur ea. Asperiores debitis sed laboriosam eum animi consequatur, unde impedit numquam fugit! Explicabo, adipisci!</div>
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, debitis. Id quos, hic molestiae quae tenetur ea. Asperiores debitis sed laboriosam eum animi consequatur, unde impedit numquam fugit! Explicabo, adipisci!</div>
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, debitis. Id quos, hic molestiae quae tenetur ea. Asperiores debitis sed laboriosam eum animi consequatur, unde impedit numquam fugit! Explicabo, adipisci!</div>
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, debitis. Id quos, hic molestiae quae tenetur ea. Asperiores debitis sed laboriosam eum animi consequatur, unde impedit numquam fugit! Explicabo, adipisci!</div>
+    </div>
+    <marquee behavior="" direction="">Lorem ipsum dolor sit amet, consectetur!</marquee>
+    <footer id="footer"> <h1>footer</h1></footer>
+</body>
+</html>
