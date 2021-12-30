@@ -62,7 +62,13 @@
     .nav :nth-child(1):hover .homechild {
         display: list-item;
     
+    }
+    .grandchildmenu{
+        display: none;
     } 
+    .homechild:nth-child(1):hover .grandchildmenu{
+        display: list-item;
+    }
     
     .contactchild{
         background: orangered;
@@ -238,7 +244,14 @@
             <!-- <li>logo</li> -->
             <li>Home
             <ul class="homechild">
-                   <li>abc</li>
+                   <li>abc 
+                       <ul class="grandchildmenu">
+                           <li>def</li>
+                           <li>def</li>
+                           <li>def</li>
+                           <li>def</li>
+                       </ul>
+                   </li>
                     <li>def</li>
                     <li>ghi</li>
                     <li>jkl</li>
